@@ -12,16 +12,18 @@
     $altura= 10;
     $diagonalMayor= 8;
     $diagonalMenor= 6;
+    $radio= 4;
     $areaTriangulo= $base*$altura/2;
     $areaCuadrado= $base*$altura;
     $areaRombo= $diagonalMayor*$diagonalMenor/2;
-    
     define("PI", 3.14159);
-    echo PI;
+    $areaCirculo= $radio*$radio*PI;
+    
+    
     printf ("<p> El Triangulo de base tiene %d cm, de altura %d cm y tiene un area de %d cm </p>",$base, $altura, $areaTriangulo);
     printf ("<p> El Cuadrado de base tiene %d cm, de altura %d cm y tiene un area de %d cm </p>",$base, $altura, $areaCuadrado );
     printf ("<p> El Rombo de diagonal mayor tiene %d cm, de diagonal menor tiene %d cm y tiene un area de %d cm </p>",$diagonalMayor, $diagonalMenor, $areaRombo );
-
+    echo ("<p> El circulo de radio tiene $radio cm, su area es el radio al cuadrado por $PI tiene un area de $areaCirculo</p>");
 
     ?>
 </body>
